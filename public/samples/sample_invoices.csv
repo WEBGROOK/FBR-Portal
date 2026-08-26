@@ -1,0 +1,4 @@
+Invoice Number,Invoice Date,Buyer Name,Buyer NTN,Buyer CNIC,Item Code,Item Name,PCT Code,Quantity,Unit Price,Discount,Tax Rate,Payment Mode
+INV-CSV-8001,2026-08-25,Indus Tech Solutions,4567890-1,,SKU-SVR-01,Rack Server Unit 2U,8471.5000,2,250000,10000,18,2
+INV-CSV-8001,2026-08-25,Indus Tech Solutions,4567890-1,,SKU-CAB-05,Cat6 Network Cable Box,8544.4990,5,12000,0,18,2
+INV-CSV-8002,2026-08-25,Shahid Afridi,,42201-9876543-5,SKU-UPS-01,Online UPS 3kVA,8504.4010,1,85000,2000,18,1

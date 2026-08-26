@@ -1,0 +1,48 @@
+[
+  {
+    "invoiceNumber": "INV-JSON-9001",
+    "invoiceDate": "2026-08-25",
+    "buyerName": "Karakoram Traders",
+    "buyerNTN": "1234567-8",
+    "buyerPhone": "0300-5551234",
+    "paymentMode": "1",
+    "items": [
+      {
+        "itemCode": "SKU-SOLAR-01",
+        "itemName": "550W Monocrystalline Solar Panel",
+        "PCTCode": "8541.4300",
+        "quantity": 10,
+        "unitPrice": 22500,
+        "discount": 5000,
+        "taxRate": 18
+      },
+      {
+        "itemCode": "SKU-INV-02",
+        "itemName": "Hybrid Solar Inverter 6kW",
+        "PCTCode": "8504.4090",
+        "quantity": 2,
+        "unitPrice": 145000,
+        "discount": 0,
+        "taxRate": 18
+      }
+    ]
+  },
+  {
+    "invoiceNumber": "INV-JSON-9002",
+    "invoiceDate": "2026-08-25",
+    "buyerName": "Lahore General Store",
+    "buyerCNIC": "35202-1234567-9",
+    "paymentMode": "2",
+    "items": [
+      {
+        "itemCode": "SKU-LED-10",
+        "itemName": "Smart Energy LED Light 18W",
+        "PCTCode": "8539.5000",
+        "quantity": 50,
+        "unitPrice": 450,
+        "discount": 1000,
+        "taxRate": 18
+      }
+    ]
+  }
+]
