@@ -96,7 +96,15 @@ return [
             'prefix' => '',
             'prefix_indexes' => true,
             'search_path' => 'public',
-            'sslmode' => env('DB_SSLMODE', 'prefer') . (env('DB_ENDPOINT') ? ';options=endpoint=' . env('DB_ENDPOINT') : ''),
+            'sslmode' => (function () {
+                $sslmode = env('DB_SSLMODE', 'require');
+                $endpoint = env('DB_ENDPOINT');
+                if (!$endpoint && env('DB_HOST') && str_contains(env('DB_HOST'), 'neon.tech')) {
+                    $hostParts = explode('.', env('DB_HOST'));
+                    $endpoint = $hostParts[0] ?? null;
+                }
+                return $endpoint ? "{$sslmode};options=endpoint={$endpoint}" : $sslmode;
+            })(),
         ],
 
         'sqlsrv' => [
